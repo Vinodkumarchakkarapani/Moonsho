@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220915 20:17:09.308" rpa="false" schemaversion="3">
+<suite id="s1" name="TC 01 login" source="C:\Users\vinow\PycharmProjects\Corpex\Corpex\Testscripts\login\TC_01_login.robot">
+<test id="s1-t1" name="TC_01_login with valid credentials for moonshot" line="17">
+<kw name="Open browser" library="moonshot_loginpage">
+<kw name="Open Browser" library="library">
+<arg>${url}</arg>
+<status status="PASS" starttime="20220915 20:17:11.428" endtime="20220915 20:17:15.598"/>
+</kw>
+<status status="PASS" starttime="20220915 20:17:11.427" endtime="20220915 20:17:15.599"/>
+</kw>
+<kw name="login Moonshot app" library="moonshot_loginpage">
+<arg>${username_moonshot}</arg>
+<arg>${password_moonshot}</arg>
+<kw name="Login To Moonshot" library="library">
+<arg>${username_moonshot}</arg>
+<arg>${password_moonshot}</arg>
+<status status="PASS" starttime="20220915 20:17:15.601" endtime="20220915 20:17:26.827"/>
+</kw>
+<kw name="capture element screenshot">
+<arg>/html/body/app-root/app-login/div/div/div/div[1]/img</arg>
+<arg>loginmoonshot.png</arg>
+<msg timestamp="20220915 20:17:26.828" level="FAIL">Multiple keywords with name 'capture element screenshot' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Capture Element Screenshot
+    SeleniumLibrary.Capture Element Screenshot</msg>
+<status status="FAIL" starttime="20220915 20:17:26.827" endtime="20220915 20:17:26.828"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220915 20:17:26.828" endtime="20220915 20:17:26.829"/>
+</kw>
+<kw name="Pop Up Username" library="library">
+<arg>${pop-username}</arg>
+<status status="NOT RUN" starttime="20220915 20:17:26.829" endtime="20220915 20:17:26.829"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220915 20:17:26.829" endtime="20220915 20:17:26.829"/>
+</kw>
+<kw name="Pop Up Password" library="library">
+<arg>${pop-password}</arg>
+<status status="NOT RUN" starttime="20220915 20:17:26.830" endtime="20220915 20:17:26.831"/>
+</kw>
+<kw name="Pop Up Button" library="library">
+<status status="NOT RUN" starttime="20220915 20:17:26.832" endtime="20220915 20:17:26.832"/>
+</kw>
+<status status="FAIL" starttime="20220915 20:17:15.600" endtime="20220915 20:17:26.833"/>
+</kw>
+<status status="FAIL" starttime="20220915 20:17:11.426" endtime="20220915 20:17:26.843">Multiple keywords with name 'capture element screenshot' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Capture Element Screenshot
+    SeleniumLibrary.Capture Element Screenshot</status>
+</test>
+<test id="s1-t2" name="TC_02_Verify the user is able to select the client as amazon from jump to client dropdown" line="22">
+<kw name="dashboard page" library="moonshot_loginpage">
+<kw name="Sleep" library="BuiltIn">
+<arg>60</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="FAIL" starttime="20220915 20:17:26.846" endtime="20220915 20:18:00.736"/>
+</kw>
+<kw name="Jump To Click Dropdown" library="library">
+<status status="NOT RUN" starttime="20220915 20:18:00.736" endtime="20220915 20:18:00.736"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220915 20:18:00.736" endtime="20220915 20:18:00.736"/>
+</kw>
+<kw name="Amazon Dropdown Value" library="library">
+<status status="NOT RUN" starttime="20220915 20:18:00.737" endtime="20220915 20:18:00.737"/>
+</kw>
+<status status="FAIL" starttime="20220915 20:17:26.846" endtime="20220915 20:18:00.737"/>
+</kw>
+<status status="FAIL" starttime="20220915 20:17:26.845" endtime="20220915 20:18:00.739">Execution terminated by signal</status>
+</test>
+<test id="s1-t3" name="TC_03_Verify the user is able to click on Add plan button and select vision from add new plan pop-up" line="26">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220915 20:18:00.740" endtime="20220915 20:18:00.742">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t4" name="TC_04_Verify the user is able to fill in all fields and create the plan in draft mode" line="30">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220915 20:18:00.744" endtime="20220915 20:18:00.746">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t5" name="TC_05_Verify the user is able to navigate to plan summaries page and click on created plan" line="34">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220915 20:18:00.747" endtime="20220915 20:18:00.749">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t6" name="TC_06_Verify if the user is able to select the first plan by clicking on &quot;view all&quot; link from latest activity" line="38">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220915 20:18:00.752" endtime="20220915 20:18:00.756">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t7" name="TC_07_Verify if the user is able to edit and update the plan" line="42">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220915 20:18:00.759" endtime="20220915 20:18:00.762">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t8" name="TC_08_Verify if the browser is closed automatically" line="46">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220915 20:18:00.764" endtime="20220915 20:18:00.765">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20220915 20:17:09.309" endtime="20220915 20:18:00.768"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="8" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+</tag>
+<suite>
+<stat pass="0" fail="8" skip="0" id="s1" name="TC 01 login">TC 01 login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220915 20:17:09.625" level="WARN">Imported library 'C:\Users\vinow\PycharmProjects\Corpex\Corpex\py\properties.py' contains no keywords.</msg>
+</errors>
+</robot>
